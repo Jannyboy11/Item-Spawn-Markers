@@ -24,7 +24,7 @@ public class ItemSpawnMarkersPlugin extends Plugin {
 
     private final ItemSpawnCache itemSpawnCache = new ItemSpawnCache();
     private final ItemSpawnList itemSpawns = new ItemSpawnList(); {
-        //TODO make this dynamic
+        //TODO make this more dynamic
         itemSpawns.put(new ItemSpawn(new WorldPoint(3368, 3152, 0), ItemID.BONES, 100));
         itemSpawns.put(new ItemSpawn(new WorldPoint(3376, 3152, 0), ItemID.BONES, 100));
         itemSpawns.put(new ItemSpawn(new WorldPoint(3377, 3157, 0), ItemID.BONES, 100));

@@ -39,6 +39,8 @@ class ItemSpawnOverlay extends Overlay {
         //TODO Instead of iterating over all itemSpawns we should iterate only over those spawns that are in range.
         //TODO To get those tile locations efficiently, we should probably store them in a QuadTree.
 
+        //TODO actually, we can probably get away by just iterating over the spawns that are in the live cache.
+
         for (ItemSpawn itemSpawn : itemSpawns) {
             WorldPoint worldPoint = itemSpawn.getLocation();
 
