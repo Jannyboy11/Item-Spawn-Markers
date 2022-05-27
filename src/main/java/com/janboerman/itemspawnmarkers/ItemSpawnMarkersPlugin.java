@@ -62,13 +62,6 @@ public class ItemSpawnMarkersPlugin extends Plugin {
     }
 
     @Subscribe
-    public void onGameStateChanged(GameStateChanged gameStateChanged) {
-        if (gameStateChanged.getGameState() == GameState.LOGGED_IN) {
-            client.addChatMessage(ChatMessageType.GAMEMESSAGE, "", "Item Spawn Markers says " + config.greeting(), null);
-        }
-    }
-
-    @Subscribe
     public void onGameTick(GameTick event) {
         itemSpawnCache.tick();
     }
